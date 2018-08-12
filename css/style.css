@@ -111,3 +111,7 @@ body {
 #buttons button#stop{
   background : #f00;
 }
+
+#buttons button#distracted{
+  background : transparent;
+}
