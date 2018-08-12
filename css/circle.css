@@ -1,0 +1,49 @@
+.circle-counter {
+    background-color: transparent;
+    border: 2px solid rgba(255,0,0,0);
+    height: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 200px;
+    transform-origin: 44% 48%;
+}
+
+@-webkit-keyframes counter-rotating /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    to {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes counter-rotating {
+    from {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(0360deg);
+        -webkit-transform: rotate(0360deg);
+        -o-transform: rotate(0360deg);
+        transform: rotate(0360deg);
+    }
+    to {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+.counter-rotating {
+    -webkit-animation: rotating 20s linear infinite;
+    -moz-animation: rotating 20s linear infinite;
+    -ms-animation: rotating 20s linear infinite;
+    -o-animation: rotating 20s linear infinite;
+    animation: rotating 20s linear infinite;
+}

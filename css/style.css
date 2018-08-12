@@ -14,7 +14,7 @@ body {
 
 .circle {
     background-color: transparent;
-    border: 2px solid red;
+    border: 2px solid rgba(255,0,0,0.1);
     height: 200px;
     border-radius: 50%;
     -moz-border-radius: 50%;
@@ -70,7 +70,7 @@ body {
     -moz-animation: rotating 20s linear infinite;
     -ms-animation: rotating 20s linear infinite;
     -o-animation: rotating 20s linear infinite;
-    animation: rotating 10s linear infinite;
+    animation: rotating 20s linear infinite;
 }
 
 .centered {
