@@ -89,7 +89,18 @@ body {
 
 .my_text {
 
-    font-family: Helvetica;
+    font-family: Helvetica Neue;
     font-size: 30px;
     font-weight: bold;
+}
+#buttons button#shortBreak{
+  background : #0c0;
+}
+
+#buttons button#longBreak{
+  background : #080;
+}
+
+#buttons button#stop{
+  background : #f00;
 }
