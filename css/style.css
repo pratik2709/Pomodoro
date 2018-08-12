@@ -1,6 +1,12 @@
 body {
     background-color: #00001a;
 }
+.center-trial{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -70px 0 0 -170px;
+}
 
 .circle-static {
     background-color: #000;
@@ -74,9 +80,10 @@ body {
 }
 
 .centered {
-    position: fixed; /* or absolute */
+    position: absolute;
     top: 50%;
     left: 50%;
+    margin: -100px 0 0 -100px
 }
 
 .centered-text {

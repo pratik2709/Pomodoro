@@ -57,8 +57,8 @@ var pomodoro = {
                 this.distracted_opacity = 1;
             }
         }
-        document.getElementById("distracted_circle").style.border
-            = "2px solid rgba(255,0,0," + String(this.distracted_opacity) + ")";
+        // document.getElementById("distracted_circle").style.border
+        //     = "2px solid rgba(255,0,0," + String(this.distracted_opacity) + ")";
 
         var new_div = document.createElement("div");
         console.log(new_div);
