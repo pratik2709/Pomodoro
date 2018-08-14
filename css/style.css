@@ -100,18 +100,12 @@ body {
     font-size: 30px;
     font-weight: bold;
 }
-#buttons button#shortBreak{
-  background : #0c0;
-}
 
-#buttons button#longBreak{
-  background : #080;
+.custom_button {
+    display:inline-block;
+    border: none;
 }
-
-#buttons button#stop{
-  background : #f00;
-}
-
-#buttons button#distracted{
-  background : transparent;
+.icons {
+    font-size:50px;
+    color:white;
 }
