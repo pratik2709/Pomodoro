@@ -9,7 +9,117 @@ body {
 }
 
 .circle-static {
+    background-color: #000;body {
+    background-color: #00001a;
+}
+.center-trial{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -70px 0 0 -170px;
+}
+
+.circle-static {
     background-color: #000;
+    height: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 200px;
+    z-index: 100;
+}
+
+.circle {
+    background-color: transparent;
+    border: 2px solid rgba(255,0,0,0.1);
+    height: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 200px;
+    transform-origin: 45% 48%;
+}
+
+.circle1 {
+    background-color: transparent;
+    border: 2px solid blue;
+    height: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 200px;
+    transform-origin: 48% 45%;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */
+{
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotating {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating {
+    -webkit-animation: rotating 20s linear infinite;
+    -moz-animation: rotating 20s linear infinite;
+    -ms-animation: rotating 20s linear infinite;
+    -o-animation: rotating 20s linear infinite;
+    animation: rotating 20s linear infinite;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white
+}
+
+.my_text {
+
+    font-family: Helvetica Neue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.custom_button {
+    display:inline-block;
+    border: none;
+    font-size: 30px;
+    color: blue;
+    background: transparent;
+}
+
     height: 200px;
     border-radius: 50%;
     -moz-border-radius: 50%;
