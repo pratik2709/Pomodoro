@@ -104,8 +104,7 @@ body {
 .custom_button {
     display:inline-block;
     border: none;
-}
-.icons {
-    font-size:50px;
-    color:white;
+    font-size: 30px;
+    color: blue;
+    background: transparent;
 }
