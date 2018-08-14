@@ -1,0 +1,13 @@
+{
+ "manifest_version": 2,
+ "name": "Pomodoro",
+ "description": "Improve your productivity!",
+ "version": "1",
+ "author": "Pratik Saxena",
+
+"chrome_url_overrides": {
+  "newtab": "popup.html"
+ },
+
+ "permissions": ["activeTab"]
+}
