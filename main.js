@@ -49,6 +49,7 @@ var pomodoro = {
     stopTimer: function () {
         this.resetVariables(25, 0, false);
         this.updateDom();
+        displayNotification();
     },
     distracted: function () {
         if (this.distracted_opacity < 1) {
@@ -113,4 +114,16 @@ async function installServiceWorkerAsync() {
             console.error(`Failed to register service worker: ${err}`)
         }
     }
+}
+
+Notification.requestPermission(function(status) {
+    console.log('Notification permission status:', status);
+});
+
+function displayNotification() {
+  if (Notification.permission == 'granted') {
+    navigator.serviceWorker.getRegistration().then(function(reg) {
+      reg.showNotification('Timer Stopped');
+    });
+  }
 }
