@@ -9,8 +9,7 @@
   "icons": [
     {
       "src": "pomodoro.png",
-      "sizes": "192x192",
-      "type": "png"
+      "sizes": "192x192"
     }
   ]
 }
