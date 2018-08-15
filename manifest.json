@@ -10,6 +10,10 @@
     {
       "src": "pomodoro.png",
       "sizes": "192x192"
+    },
+    {
+      "src": "pomodoro.png",
+      "sizes": "512x512"
     }
   ]
 }

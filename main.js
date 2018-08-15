@@ -50,7 +50,6 @@ var pomodoro = {
     stopTimer: function () {
         this.resetVariables(25, 0, false);
         this.updateDom();
-        displayNotification('Time up!');
     },
     distracted: function () {
         if (this.distracted_opacity < 1) {
@@ -98,7 +97,7 @@ var pomodoro = {
     },
     timerComplete: function () {
         this.started = false;
-        this.fillerHeight = 0;
+        displayNotification('Time up!');
     }
 };
 window.onload = function () {
