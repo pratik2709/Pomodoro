@@ -39,6 +39,7 @@ var pomodoro = {
     },
     startWork: function () {
         this.resetVariables(25, 0, true);
+        displayNotification('Let\'s get started!');
     },
     startShortBreak: function () {
         this.resetVariables(5, 0, true);
@@ -49,7 +50,7 @@ var pomodoro = {
     stopTimer: function () {
         this.resetVariables(25, 0, false);
         this.updateDom();
-        displayNotification();
+        displayNotification('Time up!');
     },
     distracted: function () {
         if (this.distracted_opacity < 1) {
@@ -120,10 +121,10 @@ Notification.requestPermission(function(status) {
     console.log('Notification permission status:', status);
 });
 
-function displayNotification() {
+function displayNotification(displayText) {
   if (Notification.permission == 'granted') {
     navigator.serviceWorker.getRegistration().then(function(reg) {
-      reg.showNotification('Timer Stopped');
+      reg.showNotification(displayText);
     });
   }
 }
