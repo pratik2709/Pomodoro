@@ -7,12 +7,12 @@ const CACHE_NAME = "V1"
  */
 this.addEventListener('install', async function() {
     const cache = await caches.open(CACHE_NAME);
-    cache.addAll([
-        'index.html',
-        'css/style.css',
-        'css/circle.css',
-        'main.js',
-    ])
+//    cache.addAll([
+//        'index.html',
+//        'css/style.css',
+//        'css/circle.css',
+//        'main.js',
+//    ])
 })
 
 this.addEventListener('fetch', function(event) {
