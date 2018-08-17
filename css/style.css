@@ -110,22 +110,18 @@ body {
     background: transparent;
 }
 
-#start {
-  display:none;
+.con {
 }
 
-.showhim:hover #start{
-  display:block;
+.start {
+  opacity:0;
 }
 
-.showhim:hover #minutes{
-  display:none;
+.con:hover .time{
+  opacity:0;
 }
 
-.showhim:hover #colon{
-  display:none;
+.con:hover .start{
+  opacity:1;
 }
 
-.showhim:hover #seconds{
-  display:none;
-}
