@@ -110,14 +110,22 @@ body {
     background: transparent;
 }
 
-.showme{
-  visibility:hidden;
+#start {
+  display:none;
 }
 
-.showhim:hover {
-  visibility:hidden;
+.showhim:hover #start{
+  display:block;
 }
 
-.showhim:hover + .showme{
-  visibility:visible;
+.showhim:hover #minutes{
+  display:none;
+}
+
+.showhim:hover #colon{
+  display:none;
+}
+
+.showhim:hover #seconds{
+  display:none;
 }

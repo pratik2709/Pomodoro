@@ -102,7 +102,7 @@ var pomodoro = {
 };
 window.onload = function () {
     installServiceWorkerAsync();
-    abc();
+//    abc();
     pomodoro.init();
 };
 
@@ -157,3 +157,4 @@ function abc(){
         });
     });
 }
+
