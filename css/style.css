@@ -110,18 +110,18 @@ body {
     background: transparent;
 }
 
-.con {
+.content-container {
 }
 
 .start {
   opacity:0;
 }
 
-.con:hover .time{
+.content-container:hover .time{
   opacity:0;
 }
 
-.con:hover .start{
+.content-container:hover .start{
   opacity:1;
 }
 
