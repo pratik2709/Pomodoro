@@ -152,7 +152,7 @@ function installOnUserMachine(){
           if (choiceResult.outcome === 'accepted') {
             console.log('User accepted the A2HS prompt');
           } else {
-            (document.querySelector('#addButton')).style.display = 'block';
+            (document.querySelector('#addButton')).style.display = 'inline-block';
             console.log('User dismissed the A2HS prompt');
           }
         });
