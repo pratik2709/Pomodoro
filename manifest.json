@@ -6,6 +6,7 @@
   "start_url": "/",
   "display": "fullscreen",
   "theme_color": "#00001a",
+  "background_color": "#00001a",
   "icons": [
     {
       "src": "pomodoro.png",
