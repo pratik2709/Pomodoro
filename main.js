@@ -102,7 +102,7 @@ var pomodoro = {
 };
 window.onload = function () {
     installServiceWorkerAsync();
-//    abc();
+    installOnUserMachine();
     pomodoro.init();
 };
 
@@ -132,14 +132,15 @@ function displayNotification(displayText) {
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
+  console.log("triggered");
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
   // Stash the event so it can be triggered later.
   deferredPrompt = e;
-  console.log("triggered")
+
 });
 
-function abc(){
+function installOnUserMachine(){
     (document.querySelector('#addButton')).addEventListener('click', (e) => {
       // hide our user interface that shows our A2HS button
       (document.querySelector('#addButton')).style.display = 'none';
