@@ -108,7 +108,17 @@ body {
     font-size: 30px;
     color: white;
     background: transparent;
+    font-weight: bold;
+    transition:0s 0.2s;
 }
+
+.custom_button:active {
+  opacity:0.5;
+  transition:0s;
+}
+
+button:focus {outline:0;}
+
 
 .content-container {
 }
