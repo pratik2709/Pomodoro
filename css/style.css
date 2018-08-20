@@ -135,3 +135,10 @@ button:focus {outline:0;}
   opacity:1;
 }
 
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  text-decoration: none;
+  color: black;
+}
+

@@ -143,7 +143,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 function installOnUserMachine(){
     (document.querySelector('#addButton')).addEventListener('click', (e) => {
       // hide our user interface that shows our A2HS button
-      (document.querySelector('#addButton')).style.display = 'none';
+      (document.querySelector('#addButton')).style.class = 'not-active';
       // Show the prompt
       deferredPrompt.prompt();
       // Wait for the user to respond to the prompt
@@ -152,7 +152,7 @@ function installOnUserMachine(){
           if (choiceResult.outcome === 'accepted') {
             console.log('User accepted the A2HS prompt');
           } else {
-            (document.querySelector('#addButton')).style.display = 'inline-block';
+            (document.querySelector('#addButton')).style.class = '';
             console.log('User dismissed the A2HS prompt');
           }
         });
