@@ -103,24 +103,17 @@ body {
 
 
 .custom_button {
-    display:block;
+    display:inline-block;
     border: none;
     font-size: 30px;
     color: white;
     background: transparent;
     font-weight: bold;
     transition:0s 0.2s;
-    bottom: -50%;
     margin-right: 10px
 }
 
-.test{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    bottom: -120%;
-}
+
 
 
 .custom_button:active {
@@ -154,3 +147,14 @@ button:focus {outline:0;}
   text-decoration: none;
 }
 
+div.test {
+    display: table;
+    width: 100%;
+    table-layout: fixed;    /* For cells of equal size */
+
+}
+div.test span {
+    display: table-cell;
+    text-align: center;
+    bottom: -500%;
+}
