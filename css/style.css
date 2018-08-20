@@ -103,7 +103,7 @@ body {
 
 
 .custom_button {
-    display:inline-block;
+    display:block;
     border: none;
     font-size: 30px;
     color: white;
