@@ -110,7 +110,17 @@ body {
     background: transparent;
     font-weight: bold;
     transition:0s 0.2s;
+    bottom: -50%;
 }
+
+.test{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -120%;
+}
+
 
 .custom_button:active {
   opacity:0.5;
