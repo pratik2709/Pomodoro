@@ -149,12 +149,16 @@ button:focus {outline:0;}
 
 div.test {
     display: table;
-    width: 100%;
+    width: 200%;
     table-layout: fixed;    /* For cells of equal size */
+    position: relative;
+    bottom: -120%;
 
 }
 div.test span {
+    margin:0px;
+    padding:0px;
+    float:left;
     display: table-cell;
     text-align: center;
-    bottom: -500%;
 }
