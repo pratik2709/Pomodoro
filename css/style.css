@@ -135,10 +135,11 @@ button:focus {outline:0;}
   opacity:1;
 }
 
-.not-active {
+.isDisabled {
+  color: currentColor;
   pointer-events: none;
-  cursor: default;
+  cursor: not-allowed;
+  opacity: 0.5;
   text-decoration: none;
-  color: black;
 }
 
