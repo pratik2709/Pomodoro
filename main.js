@@ -159,21 +159,6 @@ function installOnUserMachine(){
         });
     });
 
-// $('#addButton').first().one("click", function (e) {
-//      (document.querySelector('#addButton')).style.class = 'isDisabled';
-//      // Show the prompt
-//      deferredPrompt.prompt();
-//      // Wait for the user to respond to the prompt
-//      deferredPrompt.userChoice
-//        .then((choiceResult) => {
-//          if (choiceResult.outcome === 'accepted') {
-//            console.log('User accepted the A2HS prompt');
-//          } else {
-//            (document.querySelector('#addButton')).style.class = 'isDisabled';
-//            console.log('User dismissed the A2HS prompt');
-//          }
-//        });
-//});
 }
 
 /* Set the width of the side navigation to 250px */
