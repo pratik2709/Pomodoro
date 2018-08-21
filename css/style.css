@@ -113,7 +113,11 @@ body {
 }
 
 
-
+@media only screen and (max-width: 600px) {
+    .custom_button {
+        margin-right: 1px;
+    }
+}
 
 .custom_button:active {
   opacity:0.5;
