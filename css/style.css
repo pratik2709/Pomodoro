@@ -141,7 +141,7 @@ button:focus {outline:0;}
 
 
 
-
+/*
 .custom_button {
     display:inline-block;
     border: none;
@@ -151,7 +151,7 @@ button:focus {outline:0;}
     font-weight: bold;
     transition:0s 0.2s;
 }
-
+*/
 
 .custom_button:active {
   opacity:0.5;
@@ -176,9 +176,13 @@ ul {
 
 .social.item button {
     position: relative;
+     white-space: nowrap;
     display: block;
-    font-size: 1em;
+    font-size: 1vw;
     -webkit-font-smoothing: antialiased;
-    font-weight: 700;
     letter-spacing: 0.5px;
+    color: white;
+    background: transparent;
+    font-weight: bold;
+    border: none;
 }
