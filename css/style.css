@@ -160,12 +160,6 @@ button:focus {outline:0;}
 
 
 .social {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  -webkit-justify-content: center;
-  justify-content: flex-start;
-  align-items: center;
     margin: 0;
     position: relative;
     bottom: -120%;
@@ -173,6 +167,18 @@ button:focus {outline:0;}
 
 .social.item {
     display: inline-block;
-    margin: 0 4px 0 0;
-    line-height: 2em;
+
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.social.item button {
+    position: relative;
+    display: block;
+    font-size: 1em;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
