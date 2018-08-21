@@ -110,7 +110,6 @@ body {
     background: transparent;
     font-weight: bold;
     transition:0s 0.2s;
-    margin-right: 10px
 }
 
 
@@ -149,6 +148,12 @@ button:focus {outline:0;}
 
 .flex-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 100%;
   position: relative;
   bottom: -120%;
 }
