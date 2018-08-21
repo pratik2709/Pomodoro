@@ -190,7 +190,7 @@ ul {
     background: transparent;
     font-weight: bold;
     border: none;
-    padding:1;
+    -webkit-appearance: none;
 }
 
 
