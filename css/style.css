@@ -141,7 +141,7 @@ button:focus {outline:0;}
 
 
 
-/*
+
 .custom_button {
     display:inline-block;
     border: none;
@@ -149,9 +149,9 @@ button:focus {outline:0;}
     color: white;
     background: transparent;
     font-weight: bold;
+    letter-spacing: 30px;
     transition:0s 0.2s;
 }
-*/
 
 .custom_button:active {
   opacity:0.5;
@@ -179,19 +179,7 @@ ul {
     list-style-type: disc;
 }
 
-.social.item button {
-    position: relative;
-     white-space: nowrap;
-    display: block;
-    letter-spacing: 2px;
-    color: white;
-    background: transparent;
-    font-weight: bold;
-    border: none;
-    font-size:30px;
-    -webkit-appearance: none;
-    border-radius: 0;
-}
+
 
 
 
