@@ -147,18 +147,8 @@ button:focus {outline:0;}
   text-decoration: none;
 }
 
-div.test {
-    display: table;
-    width: 200%;
-    table-layout: fixed;    /* For cells of equal size */
-    position: relative;
-    bottom: -120%;
-
-}
-div.test span {
-    margin:0px;
-    padding:0px;
-    float:left;
-    display: table-cell;
-    text-align: center;
+.flex-container {
+  display: flex;
+  position: relative;
+  bottom: -120%;
 }
