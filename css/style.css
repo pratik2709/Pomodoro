@@ -150,15 +150,11 @@ button:focus {outline:0;}
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  -webkit-justify-content:space-between;
-  justify-content: space-between;
-     padding: 0;
+  -webkit-justify-content: center;
+  justify-content: center;
   align-items: center;
   height: auto;
   width: 100%;
   position: relative;
   bottom: -120%;
-   span {
-      padding: 0;
-   }
 }
