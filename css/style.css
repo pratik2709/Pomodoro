@@ -100,26 +100,6 @@ body {
     font-weight: bold;
 }
 
-
-
-.custom_button {
-    display:inline-block;
-    border: none;
-    font-size: 30px;
-    color: white;
-    background: transparent;
-    font-weight: bold;
-    transition:0s 0.2s;
-}
-
-
-
-
-.custom_button:active {
-  opacity:0.5;
-  transition:0s;
-}
-
 button:focus {outline:0;}
 
 
@@ -151,10 +131,48 @@ button:focus {outline:0;}
   flex-direction: row;
   flex-wrap: nowrap;
   -webkit-justify-content: center;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: auto;
-  width: 100%;
+  width: 50%;
   position: relative;
   bottom: -120%;
+}
+
+
+
+
+.custom_button {
+    display:inline-block;
+    border: none;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    font-weight: bold;
+    transition:0s 0.2s;
+}
+
+
+.custom_button:active {
+  opacity:0.5;
+  transition:0s;
+}
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
+    margin: 0;
+    position: relative;
+    bottom: -120%;
+}
+
+.social.item {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    line-height: 2em;
 }
