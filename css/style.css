@@ -188,14 +188,11 @@ ul {
     background: transparent;
     font-weight: bold;
     border: none;
-    font-size:0px;
+    font-size:30px;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 
-.social.item button span {
-    font-size:30px;
-    margin: 0 -1em;
-    padding: 1em 1em;
-}
 
 
 
