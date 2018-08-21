@@ -160,6 +160,11 @@ button:focus {outline:0;}
 
 
 .social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
     margin: 0;
     position: relative;
     bottom: -120%;
@@ -178,7 +183,7 @@ ul {
     position: relative;
      white-space: nowrap;
     display: block;
-    font-size: 1.5vw;
+    font-size: 1.8em;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 0.5px;
     color: white;
@@ -186,3 +191,5 @@ ul {
     font-weight: bold;
     border: none;
 }
+
+
