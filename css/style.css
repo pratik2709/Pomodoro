@@ -110,14 +110,13 @@ button:focus {outline:0;}
   opacity:0;
 }
 
-.content-container:active .time {
+.content-container:hover .time{
   opacity:0;
 }
 
-.content-container:active .end {
+.content-container:hover .end{
   opacity:1;
 }
-
 
 .isDisabled {
   color: currentColor;
