@@ -141,6 +141,20 @@ button:focus {outline:0;}
 
 
 
+.custom_anchors {
+    display:inline-block;
+    border: none;
+    font-size: 30px;
+    color: white;
+    background: transparent;
+    font-weight: bold;
+    letter-spacing: 30px;
+    transition:0s 0.2s;
+}
+.custom_anchors:active {
+  opacity:0.5;
+  transition:0s;
+}
 
 .custom_button {
     display:inline-block;
