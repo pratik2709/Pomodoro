@@ -110,11 +110,11 @@ button:focus {outline:0;}
   opacity:0;
 }
 
-.content-container:hover .time{
+.content-container:active .time{
   opacity:0;
 }
 
-.content-container:hover .end{
+.content-container:active .end{
   opacity:1;
 }
 
