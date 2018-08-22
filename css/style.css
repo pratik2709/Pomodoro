@@ -149,8 +149,8 @@ button:focus {outline:0;}
     color: white;
     background: transparent;
     font-weight: bold;
-    letter-spacing: 30px;
     transition:0s 0.2s;
+    margin-right: 10px
 }
 
 .custom_button:active {
