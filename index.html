@@ -31,18 +31,20 @@
     <link rel="apple-touch-icon" type="png" sizes="192x192" href="pomodoro.png">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" media="screen" href="css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/modal.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
           integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/circle.css">
     <script src="main.js" async></script>
     <script src="navbar.js" async></script>
+    <script src="modal.js" async></script>
 </head>
 <body>
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
-    <a href="about.html">About</a>
+    <a id="myBtn">About</a>
     <a href="#" id="addButton" class="isDisabled">Install</a>
 </div>
 
@@ -103,6 +105,15 @@
         </div>
 
         <div class="circle1 rotating centered"></div>
+
+    </div>
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+      </div>
 
     </div>
 </div>
