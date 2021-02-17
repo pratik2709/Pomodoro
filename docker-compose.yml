@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  pomapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80"
+    networks:
+      - vue
+
+#  db:
+#    image: postgres
+#    environment:
+#      - POSTGRES_DB=postgres
+#      - POSTGRES_USER=postgres
+#      - POSTGRES_PASSWORD=postgres
+#    ports:
+#      - "5432"
+#    networks:
+#      - vue
+
+networks:
+  vue:
