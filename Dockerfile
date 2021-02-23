@@ -20,8 +20,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 
 # create and set working directory
-RUN mkdir /app
-WORKDIR /app
+RUN mkdir /pomodoro
+WORKDIR /pomodoro
 
 
 # install environment dependencies

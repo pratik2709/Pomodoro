@@ -6,10 +6,20 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - "80"
+      - "5000"
     networks:
       - vue
 
+  httpnewserver:
+    build:
+      context: ./nginxconf
+      dockerfile: Dockerfile
+    ports:
+      - "80:8080"
+    networks:
+      - vue
+    depends_on:
+      - pomapp
 #  db:
 #    image: postgres
 #    environment:
