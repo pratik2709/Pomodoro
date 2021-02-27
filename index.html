@@ -4,11 +4,15 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124432469-1"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-124432469-1');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124432469-1');
     </script>
 
     <meta charset="utf-8"/>
@@ -37,19 +41,18 @@
     <link rel="stylesheet" href="css/circle.css">
     <script src="main.js" async></script>
     <script src="navbar.js" async></script>
-    <script src="modal.js" async></script>
 </head>
 <body>
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html">Home</a>
-    <a id="myBtn">About</a>
+    <a href="about.html">About</a>
     <a href="#" id="addButton" class="isDisabled">Install</a>
 </div>
 
 <span onclick="openNav()" style="color: white; font-size: 30px;"><i class="fas fa-bars"></i>
-</span>
+    </span>
 
 <div id="main">
     <div id="app-container">
@@ -103,18 +106,7 @@
             </ul>
 
         </div>
-
         <div class="circle1 rotating centered"></div>
-
-    </div>
-    <div id="myModal" class="modal">
-
-      <!-- Modal content -->
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-      </div>
-
     </div>
 </div>
 
